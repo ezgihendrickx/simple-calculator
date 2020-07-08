@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="box">
+        <input type="text" id="firstNumber" value="Number..." /> <br />
+      </div>
+
+      <div>
+        <select id="calc">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="x">x</option>
+          <option value="/">/</option>
+        </select>
+        <br />
+      </div>
+      <div class="box">
+        <input type="text" id="secondNumber" value="Number..." /> <br />
+      </div>
+      <div>
+        <input id="button" type="Button" value="=" onclick="calc() ;" />
+      </div>
+      <div>
+        <output id="result" for="firstNumber secondNumber" name="outputCalc"
+          >[Result]</output
+        >
+      </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
