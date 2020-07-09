@@ -1,24 +1,34 @@
 function calc() {
+  let firstNumber = parseFloat(document.getElementById("firstNumber").value);
+  let secondNumber = parseFloat(document.getElementById("secondNumber").value);
+  let result;
 
-let firstNumber = parseFloat (document.getElementById("firstNumber").value)
-let secondNumber = parseFloat (document.getElementById("secondNumber").value)
-let result;
+  let op = document.getElementById("calc").value;
 
-let op = document.getElementById("calc").value
 
-if(op === "+") {
-    document.getElementById('result').value = firstNumber+secondNumber;
+
+  if (op === "+") {
+    result = firstNumber + secondNumber; 
+  }
+
+  if (op === "-") {
+    result = firstNumber - secondNumber; 
+  }
+  if (op === "x") {
+    result = firstNumber * secondNumber; 
+  }
+  if (op === "/") {
+    result = firstNumber / secondNumber; 
+  }
+//ISFINITE returns true if not n/a (error) or infinite (divide by 0)//
+  if (isFinite(result)) {
+    return (document.getElementById("result").innerHTML = result);
+  }
+  else {
+    return (document.getElementById("result").innerHTML = "n/a");
+  }
+  
+
 }
 
-if(op === "-") {
-    document.getElementById('result').value = firstNumber-secondNumber;
-}
-if(op === "x") {
-    document.getElementById('result').value = firstNumber*secondNumber;
-}
-if(op === "/") {
-    document.getElementById('result').value = firstNumber/secondNumber;
-}
 
-
-}

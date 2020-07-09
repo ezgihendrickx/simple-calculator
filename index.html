@@ -9,11 +9,15 @@
   <body>
     <div id="container">
       <div class="box">
-        <input type="text" id="firstNumber" value="Number..." /> <br />
+        <!--PLACEHOLDER shows text in the inputfield but it dissepear when you fill in -->
+        <!--INPUT TYPE defines what you can enter in the field-with number it is not possible to enter a text-->
+        <!--JS EVENT triggers JS Function when a spesific event happens ex:onclick & oninput-->
+
+        <input type="text" id="firstNumber" placeholder="Number..." oninput="calc() ;"/> <br />
       </div>
 
       <div>
-        <select id="calc">
+        <select id="calc" oninput="calc()">
           <option value="+">+</option>
           <option value="-">-</option>
           <option value="x">x</option>
@@ -22,7 +26,7 @@
         <br />
       </div>
       <div class="box">
-        <input type="text" id="secondNumber" value="Number..." /> <br />
+        <input type="text" id="secondNumber" placeholder="Number..." oninput="calc() ;"/> <br />
       </div>
       <div>
         <input id="button" type="Button" value="=" onclick="calc() ;" />

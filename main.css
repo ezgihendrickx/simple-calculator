@@ -1,42 +1,42 @@
 div {
-    display: inline-flex;
-    margin: 5px;
-    height: 34px;
+  display: inline-flex;
+  margin: 5px;
+  height: 34px;
 }
 
 #container {
-    padding: 50px;
-    margin: 0px;
-    /* to make content centre vertically*/
-    line-height: 34px;
+  padding: 50px;
+  margin: 0px;
+  /* to make content centre vertically*/
+  line-height: 34px;
 }
 
 #result {
-    border: 1px;
-    border-style: solid;
-    width: 138px;
-    border-color:#2CA324;
-    background-color:#B7D7A9;
-    border-radius: 3px;
-    text-align: center;      
+  border: 1px;
+  border-style: solid;
+  width: 138px;
+  border-color: #2ca324;
+  background-color: #b7d7a9;
+  border-radius: 3px;
+  text-align: center;
 }
 
 .box {
-    margin-left: 0px;
-    color: lightgrey;
-
+  margin-left: 0px;
+  color: lightgrey;
 }
 
 input {
-    padding-left: 7px;
+  padding-left: 7px;
 }
 #button {
-    background-color: lightgrey;
-    border: solid 1px;
+  background-color: lightgrey;
+  border: solid 1px;
 }
 
-#firstNumber, #secondNumber {
-    color: grey;
-    border: solid 1px;
-    border-color: black;
+#firstNumber,
+#secondNumber {
+  color: grey;
+  border: solid 1px;
+  border-color: black;
 }
